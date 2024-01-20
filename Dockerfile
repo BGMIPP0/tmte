@@ -13,9 +13,6 @@ RUN apt-get update && apt-get install -y \
 # Clean up unnecessary files to reduce the image size
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Set the resolution (adjust as needed)
-RUN xrandr -s 1280x1024
-
 # Set up additional configuration based on the system information
 # (Note: The following lines are placeholders and may need modification)
 RUN echo "Host: Z10PA-U8 Series" >> /etc/system-info
